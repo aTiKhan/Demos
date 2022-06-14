@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Coderr.Client.AdoNet" Version="1.0.2" />
+		<PackageReference Include="Coderr.Client.AspNetCore.Mvc" Version="3.0.6" />
+		<PackageReference Include="Coderr.Client.Serilog" Version="2.11.0" />
+		<PackageReference Include="Serilog" Version="2.11.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="6.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.2" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.5" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MvcDemo.Data\MvcDemo.Data.csproj" />
+	</ItemGroup>
+
+</Project>

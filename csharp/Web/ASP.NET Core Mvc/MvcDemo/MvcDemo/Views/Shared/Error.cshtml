@@ -1,0 +1,24 @@
+﻿@model Coderr.Client.AspNetCore.Mvc.Page.ErrorPageViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Custom error</h1>
+<h2 class="text-danger">@Model.ErrorMessage</h2>
+
+<img src="https://coderr.io/images/WebError.jpg" />
+
+<form method="post" action="@Model.PostUrl">
+    <input type="hidden" asp-for="ReportId" />
+    <p>
+        Provide some feedback!<br/>
+        <textarea asp-for="Feedback"></textarea>
+    </p>
+    <p>
+        Want to get notified when the error got updates?
+        <input type="email" asp-for="EmailAddress"/>
+    </p>
+    <p>
+        <input type="submit" value="Report"/>
+    </p>
+</form>
